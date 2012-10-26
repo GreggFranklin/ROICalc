@@ -4,6 +4,7 @@ Plugin Name: ROI Calculator
 Description: ROI Calculator can be added to a page or post using a shortcode [roi_calc]
 Version: 2.0
 Author: Gregg Franklin	
+Contributor: Stephen Carroll
 */
 
 // Set-up Action and Filter Hooks
