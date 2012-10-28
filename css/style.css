@@ -1,0 +1,62 @@
+a:active {
+  outline: none;
+}
+a:focus {
+  -moz-outline-style: none;
+}
+#error{  
+    margin-bottom: 20px;  
+    border: 1px solid #efefef;  
+}  
+#error ul{  
+    list-style: square;  
+    padding: 5px;  
+    font-size: 11px;  
+}  
+#error ul li{  
+    list-style-position: inside;  
+    line-height: 1.6em;  
+}  
+#error ul li strong{  
+    color: #e46c6d;  
+}  
+#error.valid ul li strong{  
+    color: #93d72e;  
+} 
+.tab-content {
+    min-height: 250px;
+}
+.roi-info {
+    padding: 0 5px;
+}
+#savings table {
+	border-bottom: 0;
+}
+#savings td+td {
+    text-align: right;
+}
+#savings .sub-total {
+    border-top: 1px solid #000;
+}
+#savings .total, #summary .total {
+    border-top: 4px double #000;
+}
+.loading {
+	background-image: url("../images/loading.gif");
+	background-repeat: no-repeat;
+	height: 32px;	
+	width: 32px;
+}
+#summary td, #summary th {
+    text-align: right;
+}
+#summary td:last-child {
+    text-align: center;
+}
+#summary td:first-child {
+    text-align: left;
+}
+#roi-loading, #roi-error {
+    text-align: center;
+    margin-bottom: 20px;
+}
