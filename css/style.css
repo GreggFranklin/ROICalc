@@ -55,8 +55,11 @@ a:focus {
 }
 #summary td:first-child {
     text-align: left;
+<<<<<<< HEAD
 }
 #roi-loading, #roi-error {
     text-align: center;
     margin-bottom: 20px;
+=======
+>>>>>>> da2db4d83e4639ed26490b905fa281149812b521
 }

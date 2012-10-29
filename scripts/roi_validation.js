@@ -52,6 +52,7 @@ $(function() {
             type: 'POST',
             cache: false,
             data: data,
+<<<<<<< HEAD
             timeout: 8000,
             
             beforeSend:function(){
@@ -62,10 +63,18 @@ $(function() {
             success:function(data){
                 // Fill in the ajax response
                 $('#roi-loading').hide();
+=======
+            beforeSend:function(){
+                // alert("before send!");
+            },
+            success:function(data){
+                // Fill in the ajax response
+>>>>>>> da2db4d83e4639ed26490b905fa281149812b521
                 $("#roi-results").html(data);
                 $('a.roi-info').tooltip().bind;
                 $('#savings').hide().bind;
                 
+<<<<<<< HEAD
                 function showSavings(e) {
 	                e.preventDefault();
 	                $('#roi-details').click(function() {
@@ -81,8 +90,29 @@ $(function() {
         });
     });
 });
+=======
+                $('#roi-details').click(function() {
+	                $('#savings').show().bind;
+	                return false;
+	             });
+            },
+            error:function(){
+                alert("Ajax Error!");
+            }
+        });
+    });
+})
+>>>>>>> da2db4d83e4639ed26490b905fa281149812b521
 
 
 $(document).ready(function() {
   $('#savings').hide();
+<<<<<<< HEAD
+=======
+ 
+  $('#roi-details').click(function() {
+    $('#savings').show('slow');
+    return false;
+  });
+>>>>>>> da2db4d83e4639ed26490b905fa281149812b521
 });

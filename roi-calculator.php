@@ -4,6 +4,10 @@ Plugin Name: ROI Calculator
 Description: ROI Calculator can be added to a page or post using a shortcode [roi_calc]
 Version: 2.0
 Author: Gregg Franklin	
+<<<<<<< HEAD
+=======
+Contributor: Stephen Carroll
+>>>>>>> da2db4d83e4639ed26490b905fa281149812b521
 */
 
 // Set-up Action and Filter Hooks
@@ -78,12 +82,19 @@ function roi_add_defaults() {
 					'attorney_hourly_rate'						=>	'350.00',
 					'no_collectors'								=>	'6',
 					'percentage_collectors_no_ebh'				=>	'10',
+<<<<<<< HEAD
+=======
+					'percent_total_receivables'					=>	'85',
+>>>>>>> da2db4d83e4639ed26490b905fa281149812b521
 					'collectors_hourly_rate'					=>	'30.00',
 					'no_billers'								=>	'12',
 					'billers_hourly_rate'						=>	'30.00',
 					'hours_template_new_client'					=>	'4',
 					'it_employee_hourly_rate'					=>	'45.00',
+<<<<<<< HEAD
 					'percent_total_receivables'					=>	'85',
+=======
+>>>>>>> da2db4d83e4639ed26490b905fa281149812b521
 					'it_template_creation'						=> 	'500',
 					'it_no_templates'							=> 	'10',
 					'percentage_write_off_no_ebh'				=>	'2.70',
@@ -962,7 +973,11 @@ $total_savings = $it_savings + $write_off_savings + $write_off_savings + $attorn
 				<td>$<?php echo number_format($total_current_cost, 2, '.', ',') ?></td>
 				<td>$<?php echo number_format($total_cost_ebh, 2, '.', ',') ?></td>
 				<td>$<?php echo number_format($total_savings, 2, '.', ',') ?></td>
+<<<<<<< HEAD
 				<td><button id="roi-details" class="btn btn-mini">Details</button></td>
+=======
+				<td><button class="btn btn-mini">Details</button></td>
+>>>>>>> da2db4d83e4639ed26490b905fa281149812b521
 			</tr>
 		</table>
 		<p><?php echo $disclaimer; ?></p>
@@ -978,8 +993,11 @@ $total_savings = $it_savings + $write_off_savings + $write_off_savings + $attorn
 	Detail
 ===========================================================================*/
 ?>
+<<<<<<< HEAD
 <div id="roi-error"><h2>Whoops, unable to get results</h2><p>Sorry about that, <a href="#">Click here</a> to try again.</p></div>
 <div id="roi-loading"><img src="<?php echo plugin_dir_url(__FILE__); ?>images/loading.gif" /><h2>Just a minute while we calculate the results</h2></div>
+=======
+>>>>>>> da2db4d83e4639ed26490b905fa281149812b521
 <div id="savings">
 	<table>
 		<tr>
